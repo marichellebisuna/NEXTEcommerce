@@ -8,6 +8,7 @@ class MyDocument extends Document{
      <meta name="description" content="NextJs Ecommerce" />
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" ></link>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" ></script>
+     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" ></script>
      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     </Head>
     <body>
@@ -17,5 +18,5 @@ class MyDocument extends Document{
    </Html>
   )
  }
-}
+} 
 export default MyDocument

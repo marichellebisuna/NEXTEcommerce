@@ -12,7 +12,7 @@ function Signin() {
   <div className="mb-3">
     <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
     <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-    
+    <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
   </div>
   <div className="mb-3">
     <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
@@ -20,7 +20,7 @@ function Signin() {
   </div>
   
   <button type="submit" className="btn btn-primary">Login</button>
-  <p className='pt-2'>You don't have an account? <Link href='/register'>Register</Link></p>
+  <p className='pt-2' >You don't have an account? <Link href='/register' ><a style={{color:'crimson'}}>Register Now</a></Link></p>
 </form>
   </div>
   );
