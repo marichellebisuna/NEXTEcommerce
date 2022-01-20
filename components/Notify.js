@@ -13,7 +13,7 @@ return(
  {
  notify.error && 
    <Toast 
-    msg= {{msg: notify.error, title:"Error"}} 
+    msg= {{msg: notify.err, title:"Error"}} 
     handleShow={()=> dispatch({type:'NOTIFY', payload:{}})} 
     bgColor='bg-danger'/>
     }

@@ -19,7 +19,7 @@ function Signin() {
     <input type="password" className="form-control" id="exampleInputPassword1"/>
   </div>
   
-  <button type="submit" className="btn btn-primary">Login</button>
+  <button type="submit" className="btn btn-dark w-100">Login</button>
   <p className='pt-2' >You don't have an account? <Link href='/register' ><a style={{color:'crimson'}}>Register Now</a></Link></p>
 </form>
   </div>

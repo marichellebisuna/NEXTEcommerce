@@ -23,7 +23,9 @@ function Register() {
     e.preventDefault()
     const errMsg = valid(name, email, password, cf_password)
     if(errMsg) return dispatch({type:'NOTIFY', payload:{error:errMsg}})
+
     dispatch({type:'NOTIFY', payload:{loading:true}})
+    
     const res = await postData('auth/register', userData)
     if(res.err) return dispatch({type:'NOTIFY', payload:{error:res.err}})
     return dispatch({type:'NOTIFY', payload:{success:res.msg}})
@@ -52,7 +54,7 @@ function Register() {
     <label htmlFor="exampleInputPassword2" className="form-label">Confirm Password</label>
     <input type="password" className="form-control" id="exampleInputPassword2" name='cf_password' value={cf_password} onChange={handleChangeInput}/>
   </div>
-  <button type="submit" className="btn btn-primary mt-3">Register</button>
+  <button type="submit" className="btn btn-primary mt-3 w-100">Register</button>
   <p className='pt-2' >Already have an account? <Link href='/signin' ><a style={{color:'crimson'}}>Login Now</a></Link></p>
 </form>
   </div>
