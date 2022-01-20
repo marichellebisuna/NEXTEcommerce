@@ -15,5 +15,10 @@ a {
   box-sizing: border-box;
 }
 
+
+img{
+  object-fit: cover;
+  object-position: 0 30%;
+}
 /*---------loading---------------*/
 @import url('./loading.css')
