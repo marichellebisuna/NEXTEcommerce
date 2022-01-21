@@ -21,4 +21,7 @@ img{
   object-position: 0 30%;
 }
 /*---------loading---------------*/
-@import url('./loading.css')
+@import url('./loading.css');
+
+/* ----------- Products ------------- */
+@import url('./product.css');
